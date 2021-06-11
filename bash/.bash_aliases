@@ -21,7 +21,7 @@ random_string() {
 	echo ''
 }
 
-git_ssh() {
+set_ssh() {
 	ssh_path=$HOME/.ssh
 	
 	if [ -z $SSH_AGENT_PID ]; then
@@ -39,3 +39,6 @@ git_ssh() {
 		fi
 	done
 }
+
+
+REGISTRY=registry.possibleinc.com
