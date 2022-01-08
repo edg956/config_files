@@ -1,12 +1,3 @@
-# alias for docker-compose things
-alias dcup='dcup.sh'
-alias dcbuild='dcbuild.sh'
-alias dcexec='dcexec.sh'
-alias dkill='docker kill $(docker ps -q)'
-alias dstop='docker stop $(docker ps -q)'
-alias dps='docker ps'
-alias drm='drm.sh'
-
 random_string() {
 	num=${1:-12}
 
@@ -40,5 +31,7 @@ set_ssh() {
 	done
 }
 
+if [ -e $HOME/.docker_aliases.sh ]; then
+	source $HOME/.docker_aliases
+fi
 
-REGISTRY=registry.possibleinc.com
