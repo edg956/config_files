@@ -21,7 +21,6 @@ Plug 'ncm2/ncm2-github'
 Plug 'ncm2/ncm2-jedi'	" python
 Plug 'ncm2/ncm2-vim'
 Plug 'ncm2/ncm2-go'
-Plug 'oncomouse/ncm2-biblatex'
 
 " ### Directory tree
 Plug 'scrooloose/nerdtree'

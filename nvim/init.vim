@@ -4,4 +4,4 @@
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-so .config/nvim/plugins.vim
+so $HOME/.config/nvim/plugins.vim
