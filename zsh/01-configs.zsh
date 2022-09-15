@@ -9,4 +9,8 @@ export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 export EDITOR=`which nvim`
 export VISUAL=`which nvim`
-export PATH="$PATH:$(go env GOPATH)/bin"
+
+if [ go --version 2> /dev/null ]; then
+	export PATH="$PATH:$(go env GOPATH)/bin"
+fi
+
